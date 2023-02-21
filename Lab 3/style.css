@@ -1,0 +1,197 @@
+
+html {
+  background-color: #264C4C;
+  scroll-behavior: smooth;
+}
+a:link, a:visited {
+  color: #D0A9A9;
+}
+a:hover {
+  color: #4ee89b;
+}
+body {
+  margin: 0;
+}
+
+
+#navbar {
+    background-color: #1c3838;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    font-family: 'MKDS';
+}
+#navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#navbar li {
+  display: inline-block;
+  padding-right: 80px;
+}
+#navbar a {
+    color: #f09696;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.anchor {
+  scroll-margin-top: 100px;
+}
+
+
+
+#header {
+    margin: 0;
+    padding: 3px;
+}
+#header-content {
+    text-align: center;
+    font-family: 'MKDS';
+    font-size: 7vw;
+    color: #f09696;
+}
+
+.projects-table {
+    margin-top: 30px;
+    width: 100%;
+    font-family: 'caviar_dreams';
+    padding: 10px;
+    text-align: center;
+}
+.projects-table th {
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'MKDS';
+    color: #8DF1BF;
+}
+.projects-table tr {
+    font-size: 3vw;
+    color: #8DF1BF;
+}
+.projects-table td, #projects-table th {
+    border-bottom: 3px solid #f09696;
+    border-right: 3px solid #f09696;
+}
+.projects-table a {
+    display: inline-block;
+}
+
+
+
+/* for when there's general text */
+.talking {
+    float: center;
+    text-align: justify;
+    font-size: 2vw;
+    font-family: caviar_dreams;
+    color: #8DF1BF;
+    padding: 10px 3vw 10px 3vw;
+}
+
+.img-right {
+    width: 15vw;
+    float: right;
+    border: #f09696 2vw solid;
+    margin-left: 2vw;
+}
+.img-left {
+    float: left;
+    width: 15vw;
+    border: #f09696 5px solid;
+    margin-right: 25px;
+}
+
+footer {
+  background-color: #1c3838;
+  overflow: hidden;
+  position: relative;
+  position: -webkit-fixed;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+}
+footer p {
+  text-align: center;
+  font-family: 'MKDS';
+  font-size: 2vw;
+  color: #f09696;
+}
+
+
+
+
+
+/* fancy looking seperators - uses cool css separators stuff 
+   made with help from "https://codepen.io/Moiety/full/eYarPq" */
+hr {
+    display: block;
+    margin: 2vw 0 -2.5vw;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+  hr + h2 {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 0;
+    padding: 1.5vw 3vw;
+    border: 1px solid #453986;
+    transform: translateX(-50%);
+    color: #453986;
+    font-size: 2vw;
+    font-weight: 500;
+    letter-spacing: 1vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: MKDS;
+    background-color: #fff;
+  }
+  hr + h2::first-letter {
+    margin-left: 0.32em;
+  }
+  
+  /* Alternative transform: translate */
+  hr + h2 {
+    border-width: 1px 0;
+  }
+  hr + h2::before, hr + h2::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #ffffff;
+    content: "";
+  }
+  hr + h2::before {
+    left: 0;
+  }
+  hr + h2::after {
+    right: 0;
+  }
+  
+
+/* custom fonts */
+
+@font-face {
+    font-family: MKDS;
+    src: url(/fonts/mkds/Mario-Kart-DS.ttf);
+}
+@font-face {
+    font-family: caviar_dreams;
+    src: url(/fonts/caviar_dreams/CaviarDreams.ttf);
+}
+
+
+
+
+
+
+

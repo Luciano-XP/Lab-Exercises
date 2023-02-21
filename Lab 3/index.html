@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LucianoXP</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Luciano Pomara's resume website">
+        <meta name="keywords" content="Luciano Pomara, Luc Pomara, Luke Pomara, Luciano, Pomara, LucianoXP, LucianoXP Resume">
+        <meta name="author" content="Luciano Pomara">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#backstory">Backstory</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#server">Server</a></li>
+            </ul>
+        </nav>
+        <div id="header">
+            <h1 id="header-content">LucianoXP</h1>
+        </div>
+        
+        <hr>
+        <h2 class="anchor" id="introduction">Introduction</h2>
+        <div class="talking">
+            <!-- <img src="imgs/luc.jpg" alt="Luciano Pomara (me)" width="400D"> -->
+            <p>Hello! My name is <b>Luciano Pomara</b> and this is my resume/personal website.</p>
+            <p>This site will be used as a <b>dynamic resume website</b> with the goal of slowly building upon it as I gain a repertoire of projects and certifications :)</p>
+            <p>This site will also be used to practice my HTML and CSS (and future JavaScript) development, with new versions of the website being rolled out once I am happy with how it has come out. Eventually, I will be publicly archiving the website as well so that everyone and myself can see my progress if they so please.</p>
+        </div>
+        
+        <hr>
+        <h2 class="anchor" id="backstory">Backstory</h2>
+        <div class="talking">
+            <p><img src="/imgs/luc.jpg" alt="Luciano Pomara (me)" class="img-left">Currently, I am a student at <b>SUNY Binghamton</b> attempting to pursue the Computer Science track provided at Watson College there. I decided to transfer into this department after realizing that my skills and aptitudes are more suited for this kind of work/life.</p>
+            <p>My journey with CS started around the end of middle school as I found my newfound hobby of console modding. This is when I started to develop skills such as understanding code and how systems work. As this hobby developed, I soon began to gain an interest in operating 
+                systems because I had gotten tired of how slow the netbook I was using had become. This is what led to my exploration of operating systems outside of Windows, particularly GNU/Linux. At the time (at this point around freshman year of highschool), this had not yet developed
+                into what I currently focus on which is <b>server management</b></p>
+            <p><img src="/imgs/brain_rot.jpg" alt="Brain Rot" class="img-right" style="margin-bottom: -5px;"><b>Server management</b> has been my passion for as long as I remember now. Once I started (with a Minecraft sevrer on an old laptop, actually), it slowly led to the development of skills I did not even know I was getting because of how much fun I was having.
+                Before I knew it, I had a strong understanding of <b>networking, operating systems, hardware, system resource & power usage, etc.</b> Not knowing how to find apply these skills, I got lucky after browsing the internet and found out what my current obsession, a <b>homelab</b>, is.
+                Now, I host a multitude of projects and personal resources that I am constanstly improving and revising. </p>
+            <p>As a college student now, I continue this homelabbing hobby as I improve my newfound knowledge of code as well. This website, for example, is my way of practicing <b>HTML, CSS, and JS</b>. Other than that, though, I am working on improving my proficiency in <b>Python</b> and am even taking a course right now (Spring 2023 semster) that uses it for data analyses (HARP 151 - Programming in Action).
+                Code is a part of my endeavors that I am working on to improve the most right now, as I have only just started really learning now that I have entered college.</p>
+        </div>
+
+        <hr>
+        <h2 class="anchor" id="projects">Projects</h2>
+        <table class="projects-table">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Homelab</td>
+                <td>My personal server utilizing Proxmox & Docker Compose</td>
+                <td><a href="https://gucajin.com/">gucajin.com</a></td>
+            </tr>
+            <tr>
+                <td>LucianoXP Resume</td>
+                <td>The website that you are currently on</td>
+                <td><a href="https://lucianoxp.com/">lucianoxp.com</a></td>
+            </tr>
+            <tr>
+                <td>eMail Server</td>
+                <td>My personal email server running on an low-powered SBC and connected/managed through the homelab</td>
+                <td><a href="mailto:lxpomara@lucianoxp.com">lxpomara@lucianoxp.com</a>
+                    <p>(feel free to email to get in touch)</p></td>
+            </tr>
+            <tr>
+                <td>LucOS</td> 
+                <td>A WIP operating system following Linux From Scratch. Used as a way to learn more about OS development</td>
+                <td><a href="https://www.linuxfromscratch.org/">Linux From Scratch</a></td>
+            </tr>
+        </table>
+    </br>
+        <hr>
+        <h2 class="anchor" id="server">Server</h2>
+        <div class="talking">
+            <p><img src="/imgs/proxmox_neofetch.png" alt="Proxmox Neofetch" class="img-right" style="width: 35vw"> The server's official name is <b>Gucaserver</b>. The origin to the name is that it uses the the first four letters of an old username and I liked how it sounded for the server name and will be referencing it as such. Gucaserver is running <b><a href="https://www.proxmox.com/">Proxmox</a></b> and uses a mix of <b>LXC</b> and <b><a href="https://www.docker.com/">Docker</a></b> containers in/alongside <b>virtual machines</b>. This server in particular has gone through many full-wipe revisions, the current version being the 4th in the process. There are ways to streamline backup processes and whatnot, but I like the zen that comes from setting up the server from the ground up each time (I do backups of important files though, of course). There is also a second server that I have in the cloud hosted by <b><a href="https://www.linode.com/">Linode</a></b>. This server uses a simple <b><a href="https://www.wireguard.com/">WireGuard VPN</a></b> in tandem with nifty IPTables configurations to push ports 80 and 443 (HTTP & HTTPS) from Gucaserver, to the WireGuard server, and then to the internet to be accessed by the world. The purpose of this is to bypass the need for port forwarding and making myself and the server that much more secure.</p>
+            <p>Revision 5 of Gucaserver will include a second server with improved specs to create a Proxmox cluster with (although I am considering learning kubernetes for this revision). Not only that, I have three single board computers that I want to integrate into the main server as well. These SBCs currently run software that I do not want to have direct connection to the main server with such as password managers and pastebins.</p>
+            <p>The next version of the server will also have Docker-Compose files for each of the services hosted on GitHub for easy access for myself and others.</p>
+        </div>
+            <table class="projects-table">
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>This website</td>
+                    <td>Hosted in its own LXC and pushed to the internet by using <a href="https://www.cloudflare.com/products/tunnel/">CloudFlare Tunnels</a></td>
+                </tr>
+                <tr>
+                    <td>Homelab Necessities</td>
+                    <td>Uses a custom Docker-Compose file to spin up reverse proxying, the dashboard, and <a href="https://www.portainer.io/">Portainer</a> (a docker container manager) all with one file</td>
+                </tr>
+                <tr>
+                    <td>Media Server</td>
+                    <td>Automatic show tracker and downloader with the self-hosted media watching front-end <a href="https://jellyfin.org/">Jellyfin</a></td>
+                </tr>
+                <tr>
+                    <td>eMail Servers</td>
+                    <td>Two individual virtual machines are used for both gucajin.com and lucianoxp.com emails, both getting only 1 CPU core and 2GB of ram. I prefer to isolate these due to the complexity of email servers, but they will need to be revised soon</td>
+                </tr>
+                <tr>
+                    <td>Search Engine</td>
+                    <td>SearXNG self-hosted for my own privacy. It is set to the default browser on most of my devices. I'm hoping to implement TOR encryption soon as well.</td>
+                </tr>
+                <tr>
+                    <td>Misc. Tools</td>
+                    <td>Utilities such as an internet speed tester, YouTube downloader, small file-sharing service, online terminal, etc.</td>
+                </tr>
+            </table>
+
+        <footer class="footer-content">
+            <p>LucianoXP & Gucaserver</p>
+        </footer>
+    </body>
+</html>
